@@ -84,33 +84,33 @@ const Home: NextPage = () => {
                           id="fsLP"
                           img="/futuresearch.png"
                           title="株式会社FUTUREWOODS サービスページ"
-                          href="https://www.future-search.jp/"
+                          link="https://www.future-search.jp/"
                           skill="Next.js, TypeScript, React, TailwindCSS"
                         >
-                          <p className="leading-relaxed text-sm mt-2">
-                            インターンシップにて制作。共同開発のためコンポーネントの使い回しやこまめなPRが必要だった。Webデザイナーさんが用意してくれたものをうまくコード化した(動きがうるさすぎないモダンなデザインが特徴)。
+                          <p className="leading-relaxed  mt-2">
+                            インターン生3人での共同開発。初の業務だったためコミットコメントや命名法、コンポーネント粒度など先輩のコードを見て真似した。レスポンシブ対応を特に意識して制作した。
                           </p>
                         </WorkCard>
                         <WorkCard
                           id="fsHP"
                           img="/futurewoods.png"
                           title="株式会社FUTUREWOODS リクルートページ"
-                          href="https://www.futurewoods.co.jp/"
+                          link="https://www.futurewoods.co.jp/"
                           skill="Next.js, TypeScript, React, TailwindCSS"
                         >
-                          <p className="leading-relaxed text-sm mt-2">
-                            インターンシップにて制作(共同開発)。cssはそこまで凝っていないが、レスポンシブで形が崩れたりしないよう何度も確認した。
+                          <p className="leading-relaxed  mt-2">
+                            インターン生3人での共同開発。Webデザイナーさんが用意した概形のデザインをうまくcssを用いてコード化した。動きがうるさすぎず、かつ飽きないといった程よいアニメーションとモダンなデザインが特徴。
                           </p>
                         </WorkCard>
                         <WorkCard
                           id="cocktail"
                           img="/search.png"
                           title="カクテル検索くん"
-                          href="https://marceaucocktail.vercel.app/cocktailread"
+                          link="https://marceaucocktail.vercel.app/cocktailread"
                           skill="Next.js, TypeScript, React, Firebase"
                         >
-                          <p className="leading-relaxed text-sm mt-2">
-                            バイト先のバーのレシピが多すぎて覚えられない、、お客さんに出してウケが良かったオリジナルカクテルを共有したい、、と思い個人的に作成。データベースはFirebaseを使用。もっと使いやすく、見やすくしたい。
+                          <p className="leading-relaxed  mt-2">
+                            バイト先のバーのレシピが多すぎること、オリジナルカクテルをバイトメンバーで共有したいと思ったことをきっかけに個人的に制作。材料名で検索できるようにしたのが工夫した点。これから機能を追加していく予定。
                             <br />
                             リンク先は閲覧専用ページ。
                           </p>
@@ -119,11 +119,11 @@ const Home: NextPage = () => {
                           id="syukkou"
                           img="/syukkou.png"
                           title="自動出校bot"
-                          video={true}
+                          link="video"
                           skill="Node.js, Puppeteer"
                         >
-                          <p className="leading-relaxed text-sm mt-2">
-                            研究室の出校フォーム入力が面倒なので作成。インターンでスクレイピングに使用していたPuppeteerを用いた。とてもシンプル。
+                          <p className="leading-relaxed  mt-2">
+                            研究室の出校フォーム入力が面倒なので制作。インターンでスクレイピングに使用していたPuppeteerを用いた。日付、時間を自動入力してくれる。
                           </p>
                         </WorkCard>
                         <WorkCard
@@ -131,9 +131,10 @@ const Home: NextPage = () => {
                           img="/nosight.png"
                           title="農Sightダッシュボード"
                           skill="Next.js, TypeScript, React, Firebase"
+                          link="none"
                         >
-                          <p className="leading-relaxed text-sm mt-2">
-                            友人との共同開発にて、農業DXのためのサービスの業務用ダッシュボードを制作(未公開)。フロント開発を担当しており、ユーザーがどういった機能を求めているかを聞きながら制作した。
+                          <p className="leading-relaxed  mt-2">
+                            友人との共同開発(受託)にて、農業DXのためのサービスの業務用ダッシュボードを制作。チャット機能やデータのグラフ化等を実装。ユーザーがどういった機能を求めているかを聞きながら現在も改良中。
                           </p>
                         </WorkCard>
                         {/* <WorkCard

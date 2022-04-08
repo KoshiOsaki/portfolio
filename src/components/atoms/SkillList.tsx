@@ -15,7 +15,7 @@ export const SkillList = (props: any) => {
   };
   return (
     <>
-      <dt className="w-[50%]">{lang}</dt>
+      <dt className="w-[35%]">{lang}</dt>
       <dd className="w-[50%]">{skillStar(star)}</dd>
     </>
   );

@@ -11,7 +11,7 @@ export const Header = () => {
           KoshiOsaki&apos;s Portfolio
         </p>
       </Link>
-      <p className="text-pink-600 inline ml-3">2022/04/05 更新</p>
+      <p className="text-pink-600 inline ml-3">2022/04/09 更新</p>
     </div>
   );
 };
