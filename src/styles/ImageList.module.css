@@ -1,0 +1,91 @@
+@media (min-width: 1025px) {
+  .main {
+    scroll-behavior: smooth;
+  }
+
+  .arrow_left {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 105px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+  }
+
+  .arrow_right {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 105px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+  }
+}
+
+.arrow_left:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.arrow_right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 0 5.5%;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .arrow_left {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 105px;
+    left: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+  }
+
+  .arrow_right {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 105px;
+    right: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+  }
+}

@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import { SkillList } from "../components/atoms/SkillList";
 import { WorkCard } from "../components/molecules/WorkCard";
+import style from "../styles/ImageList.module.css";
 
 const Home: NextPage = () => {
   const [openTab, setOpenTab] = useState(1);
@@ -149,17 +150,55 @@ const Home: NextPage = () => {
                         </WorkCard> */}
                       </div>
                     </div>
+
+                    {/* //ABOUT */}
                     <div
                       className={openTab === 2 ? "block" : "hidden"}
                       id="link2"
                     >
                       <div className="flex flex-wrap">
-                        <div className="inline-block w-[40%]">
-                          <img
-                            className="w-[300px] h-auto mx-auto mt-5"
-                            src="/koshi.jpg"
-                            alt=""
-                          />
+                        <div className="inline-block w-[40%] mt-3 pl-6">
+                          <div className="relative w-[330px]">
+                            <div
+                              className={`flex overflow-x-scroll ${style.main}`}
+                              id="swiper"
+                            >
+                              <div className="min-w-[430px]">
+                                <img src="/koshi.jpg" className="w-[300px] " />
+                              </div>
+                              <div className="min-w-[430px] mt-8">
+                                <img src="/bike.jpg" className="w-[300px] " />
+                              </div>
+                              <div className="min-w-[430px] mr-0">
+                                <img
+                                  src="/baccano.jpg"
+                                  className="w-[300px] "
+                                />
+                              </div>
+                            </div>
+                            <div
+                              className={style.arrow_left}
+                              onClick={() => {
+                                const elm = document.getElementById("swiper");
+                                elm && elm.scroll(elm.scrollLeft - 430, 260);
+                              }}
+                            >
+                              <span className="material-icons align-middle text-gray-600">
+                                arrow_back
+                              </span>
+                            </div>
+                            <div
+                              className={style.arrow_right}
+                              onClick={() => {
+                                const elm = document.getElementById("swiper");
+                                elm && elm.scroll(elm.scrollLeft + 430, 260);
+                              }}
+                            >
+                              <span className="material-icons align-middle text-gray-600">
+                                arrow_forward
+                              </span>
+                            </div>
+                          </div>
                         </div>
                         <div className="w-[60%]">
                           <p className="text-lg font-bold p-1 m-1">Profile</p>
@@ -201,7 +240,7 @@ const Home: NextPage = () => {
                               <SkillList lang="Docker, Git" star="4" />
                             </dl>
                             <br />
-                            <dt className="w-[40%]">GitHub</dt>
+                            <dt className="w-[40%] font-bold">GitHub</dt>
                             <dd className="w-[60%]">
                               <a
                                 href="https://github.com/KoshiOsaki"

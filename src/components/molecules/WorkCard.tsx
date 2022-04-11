@@ -38,7 +38,7 @@ export const WorkCard = (props: any) => {
       </div>
       {modal ? (
         <div className="" style={overlay} onClick={onClickOpen}>
-          <div className="z-10 w-[70%] h-[450px] p-2 mt-[100px] bg-white overflow-auto rounded-lg">
+          <div className="z-10 w-[70%] xl:w-[800px] h-[450px] p-5 mt-[100px] bg-white overflow-auto rounded-lg">
             <div className="relative">
               <p className="text-lg font-bold inline">{title}</p>
               <button
@@ -50,16 +50,18 @@ export const WorkCard = (props: any) => {
             </div>
 
             {link == "video" ? (
-              <video
-                className="w-[700px] h-auto mx-auto mt-2"
-                src="/syukkou.mp4"
-                controls
-              ></video>
-            ) : link == "none" ? (
               <div>
                 <img
-                  className="w-[300px] h-auto p-2 m-auto "
-                  src={img}
+                  className="w-full h-auto p-2 m-auto "
+                  src="syukkou.gif"
+                  alt=""
+                />
+              </div>
+            ) : link == "none" ? (
+              <div className=" mx-auto mt-2 border border-gray-500 inline-block">
+                <img
+                  className="w-full h-auto p-2 m-auto "
+                  src="/nosight_.png"
                   alt=""
                 />
               </div>
@@ -80,10 +82,12 @@ export const WorkCard = (props: any) => {
 
             <div className="p-2 ">
               <div className="p-2 mb-3">
-              <dt className="">【使った技術】</dt>
-              <dd>{"　"}{skill}</dd>
+                <dt className="">【使った技術】</dt>
+                <dd>
+                  {"　"}
+                  {skill}
+                </dd>
               </div>
-             
 
               {children}
             </div>
